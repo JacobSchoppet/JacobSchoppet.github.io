@@ -1,0 +1,149 @@
+:root {
+    --text: #02120d;
+    --background: #f7fefc;
+    --primary: #2de4af;
+    --secondary: #7ca2ee;
+    --accent: #6555e9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align: center;
+    padding: 1.5em;
+    background-color: var(--text);
+    color: var(--background);
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+}
+
+header p {
+    font-size: 1em;
+    margin-top: 0.25em;
+}
+nav {
+    background-color: var(--text);
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+#hero {
+    height: 400px;
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+#welcome {
+    padding: 2em 0;
+    border-bottom: 1px solid var(--primary);
+}
+
+#welcome h2 {
+    color: var(--text);
+    margin-bottom: 0.5em;
+}
+
+#schedule {
+    padding: 2em 0;
+    border-bottom: 1px solid var(--primary);
+}
+
+#schedule h2 {
+    margin-bottom: 1em;
+}
+
+.days {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.days a {
+    text-decoration: none;
+    color: var(--text);
+    border: 2px solid var(--text);
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.days a:hover {
+    background-color: var(--primary);
+}
+#featured {
+    padding: 2em 0;
+}
+
+#featured h2 {
+    margin-bottom: 1em;
+}
+
+.featured-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    background-color: var(--secondary);
+    color: var(--background);
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: var(--text);
+    color: var(--background);
+    text-align: center;
+    padding: 1.5em;
+}
+
+footer nav ul {
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+footer nav a {
+    color: var(--primary);
+}
